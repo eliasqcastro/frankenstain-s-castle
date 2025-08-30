@@ -1,0 +1,31 @@
+.rootWrapper_TextOption {
+
+    display: flex;
+
+    width: 100%;
+    color: white;
+
+    font-size: 1.2em;
+    height: 2em;
+    padding: 0.5em;
+    gap: 0.5em;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+
+        color: #6D28D9;
+    }
+}
+
+.rootWrapper_SelectedTextOption {
+
+    color: #8B5CF6;
+
+    &:hover {
+
+        color: #8B5CF6;
+        cursor: default;
+    }
+}

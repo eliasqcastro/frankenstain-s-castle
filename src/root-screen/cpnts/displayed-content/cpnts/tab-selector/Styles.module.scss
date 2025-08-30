@@ -1,0 +1,16 @@
+.rootWrapper_TabSelector {
+
+    display: flex;
+
+    .verticalLine {
+
+        display: flex;
+        min-height: 100%;
+        border-left: 1px solid white;
+    }
+
+    .frankensteinsCastleTab {
+
+        flex: 1; 
+    }
+}

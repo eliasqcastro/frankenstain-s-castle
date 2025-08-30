@@ -1,0 +1,35 @@
+.rootWrapper_Tab {
+
+    display: flex;
+    border-bottom: 1px solid white;
+    font-size: 1.2rem;
+    padding: 0.3em;
+
+    min-width: 5em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    color: white;
+    user-select: none;
+
+    white-space: nowrap;
+
+    &:hover {
+
+        color: #6D28D9;
+    }
+}
+
+.rootWrapper_SelectedTab {
+
+    border: none;
+    color: #8B5CF6;
+
+    &:hover {
+
+        color: #8B5CF6;
+        cursor: default;
+
+    }
+}

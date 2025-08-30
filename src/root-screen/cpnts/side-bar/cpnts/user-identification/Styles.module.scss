@@ -1,0 +1,21 @@
+.rootWrappper_UserIdentification {
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5em;
+
+    font-size: 1.5em;
+
+    color: #8B5CF6;
+
+    user-select: none;
+
+    img {
+
+        width: 2em;
+        height: 2em;
+
+        border-radius: 8px;
+    }
+}

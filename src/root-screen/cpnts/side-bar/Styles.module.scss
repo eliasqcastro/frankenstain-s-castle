@@ -1,0 +1,24 @@
+.rootWrapper_SideBar {
+
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid white;
+
+    padding: 0.5em;
+
+    .verticalSeparator {
+
+        display: flex;
+        height: 100%;
+    }
+
+    .horizontalLine {
+
+        display: flex;
+        border-top: 1px solid white;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
