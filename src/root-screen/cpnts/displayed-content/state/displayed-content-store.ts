@@ -8,6 +8,7 @@ export const ContentsForDisplay = {
     HOME: 'home',
     MESSAGES: 'messages',
     PROJECT_FINANCING: 'project-financing',
+    SEARCH: 'search',
     SETTINGS: 'settings',
     LOGOUT: 'logout',
     WALLET: 'wallert'
@@ -24,7 +25,7 @@ type DisplayedContentState = {
 
 export const displayedContentStore = createStore<DisplayedContentState>((set) => ({
 
-    contentToDisplay: ContentsForDisplay.FEED,
+    contentToDisplay: ContentsForDisplay.HOME,
     setContentToDisplay: (newContentToDisplay) => set({ contentToDisplay: newContentToDisplay })
 }))
 

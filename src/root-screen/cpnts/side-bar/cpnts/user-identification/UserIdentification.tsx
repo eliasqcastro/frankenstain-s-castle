@@ -8,7 +8,7 @@ export function UserIdentification() {
 
         <div className={styles.rootWrappper_UserIdentification}>
             <img src={userImage} alt="User profile image." />
-            O Profeta
+            Derp
         </div>
     )
 

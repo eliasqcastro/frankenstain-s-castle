@@ -1,17 +1,14 @@
 import { ContentsForDisplay } from '../displayed-content/state/displayed-content-store'
-import { TextOption } from './cpnts/text-option/TextOption'
 import { UserIdentification } from './cpnts/user-identification/UserIdentification'
 import { IoHomeOutline } from "react-icons/io5";
 import { TiMessages } from "react-icons/ti";
-
+import { IoSearchOutline } from "react-icons/io5";
 import { RiAlertLine } from "react-icons/ri";
 import styles from './Styles.module.scss'
 import { IoMdSettings } from "react-icons/io"
 import { RiLogoutBoxLine } from "react-icons/ri"
 import { IoWalletOutline } from "react-icons/io5";
-
-
-
+import { TextButton } from '../../../components/text-button/TextButton';
 
 export function SideBar() {
 
@@ -23,55 +20,88 @@ export function SideBar() {
 
             <div className={styles.horizontalLine} />
 
-            <TextOption associatedContent={ContentsForDisplay.HOME}>
+            <TextButton
+                associatedContent={ContentsForDisplay.HOME}
+                isAllowed={true}
+            >
 
                 <IoHomeOutline />
 
                 Home
 
-            </TextOption>
+            </TextButton>
 
-            <TextOption associatedContent={ContentsForDisplay.MESSAGES}>
+            <TextButton
+                associatedContent={ContentsForDisplay.SEARCH}
+                isAllowed={false}
+
+            >
+<IoSearchOutline />
+
+                Search
+
+            </TextButton>
+
+            <TextButton
+                associatedContent={ContentsForDisplay.MESSAGES}
+                isAllowed={false}
+
+            >
 
                 <TiMessages />
 
                 Messages
 
-            </TextOption>
-            <TextOption associatedContent={ContentsForDisplay.ALERTS}>
+            </TextButton>
+            <TextButton
+                associatedContent={ContentsForDisplay.ALERTS}
+                isAllowed={false}
+
+            >
 
                 <RiAlertLine />
 
                 Alerts
 
-            </TextOption>
-            <TextOption associatedContent={ContentsForDisplay.WALLET}>
+            </TextButton>
+            <TextButton
+                associatedContent={ContentsForDisplay.WALLET}
+                isAllowed={false}
+
+            >
 
                 <IoWalletOutline />
 
                 Wallet
 
-            </TextOption>
+            </TextButton>
 
             <div className={styles.verticalSeparator} />
 
             <div className={styles.horizontalLine} />
 
-            <TextOption associatedContent={ContentsForDisplay.SETTINGS}>
+            <TextButton
+                associatedContent={ContentsForDisplay.SETTINGS}
+                isAllowed={false}
+
+            >
 
                 <IoMdSettings />
 
                 Settings
 
-            </TextOption>
+            </TextButton>
 
-            <TextOption associatedContent={ContentsForDisplay.LOGOUT}>
+            <TextButton
+                associatedContent={ContentsForDisplay.LOGOUT}
+                isAllowed={false}
 
+            >
                 <RiLogoutBoxLine />
 
                 Logout
 
-            </TextOption>
+            </TextButton>
         </div>
     )
 }
